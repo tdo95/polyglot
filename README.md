@@ -1,6 +1,6 @@
 # Polyglot 💬
 Polyglot is a text translation tool that allows you to improve your literacy of a foreign language.
-<br><br>Try it out here: [Live Site]() ✨
+<br><br>Try it out here: [Live Site](https://tdo95.github.io/polyglot/) ✨
 ###
 ![Polyglot Demo Image Gif](https://github.com/tdo95/polyglot/blob/main/poly-demo.gif)
 

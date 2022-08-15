@@ -23,6 +23,7 @@
 
 body {
      font-size: 62.5%;
+     font-family: 'Roboto', sans-serif;
      background-color: rgb(246, 247, 250);
 
 }
@@ -40,8 +41,15 @@ header, .main {
      display: flex;
 }
 header {
-  padding: 0 1rem;
-  justify-content: center;   
+     align-items: center;
+     height: 100px;
+     padding: 0 1rem;
+     justify-content: center;
+}
+h1 {
+     font-family: 'Fredoka One', cursive;
+     font-size:3rem;
+     margin: 0;
 }
 .main {
      margin: 2rem;
@@ -59,17 +67,23 @@ header {
 
 
 
-
+.logo {
+     height: 100%;
+     width: auto;
+}
 .from-lang, .to-lang {
      border: none;
+     color: rgb(51,76,93);
      background: rgb(255, 255, 255);
      border-bottom: 1px solid rgb(243, 242, 249);
      padding: 1rem 0;
      width: 47.5%;
      text-transform: uppercase;
+     font-family: 'Fredoka One', cursive;
 }
 .flip-btn {
-     background: rgb(255, 255, 255);
+     background: url("https://img.icons8.com/external-inkubators-detailed-outline-inkubators/50/000000/external-left-and-right-arrows-arrows-inkubators-detailed-outline-inkubators.png") no-repeat center;
+     background-size: 30px;
      border: none;
      border-bottom: 1px solid rgb(243, 242, 249);
      width: 5%;
@@ -81,7 +95,10 @@ header {
 textarea {
      border: none;
      border-bottom-left-radius: 1rem;
-     padding: .5rem;
+     padding: 1rem;
+}
+textarea:focus {
+     outline: none;
 }
 label, p, textarea {
      width: 50%;
@@ -91,8 +108,9 @@ p {
      flex-grow: 1;
      margin: 0;
      border-bottom-right-radius: 1rem;
-     padding: .5rem;
+     padding: 1rem;
      background-color: rgb(243, 242, 249);
+     
 
 }
 
@@ -129,11 +147,21 @@ p {
 }
 
 footer {
-     position: relative;
+     width: 100%;
+     position: fixed;
      bottom: 0;
      font-size: 1rem;
      text-align: center;
+     color: rgb(51,76,93);
+     padding-bottom: 1rem;
 
+}
+
+footer a:link, footer a:visited {
+     color: rgb(51,76,93);
+}
+footer a:hover {
+     color: gray;
 }
 
 /******************************************

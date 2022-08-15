@@ -8,6 +8,10 @@
 		<meta property="og:image" content="" />
 		<link rel="icon" type="image/png" href="">
 
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600&family=Fredoka+One&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
 		<title>Polyglot</title>
 
 		<!-- external CSS link -->
@@ -16,17 +20,17 @@
 	</head>
 	<body>
 		<header>
-			<img src="" alt="">
+			<img src="poly-logo.png" class="logo" alt="logo">
 			<h1>POLYGLOT</h1>
 		</header>
 		<section class="main">
 			<label class="to-label">TO </label>
 			<label class="from-label">FROM </label>
-			<button id="left" class="from-lang">Left</button>
-			<button class="flip-btn">Flip</button>
-			<button id="right" class="to-lang">Right</button>
-			<textarea name="from-text" class="from-text" cols="30" rows="10" maxlength="10" class=""></textarea>
-			<p class="translated-text">Translated text</p>
+			<button id="left" class="from-lang">English</button>
+			<button class="flip-btn"></button>
+			<button id="right" class="to-lang">Spanish</button>
+			<textarea name="from-text" class="from-text" cols="30" rows="10" maxlength="1000" placeholder="Enter some text or type a phrase" class=""></textarea>
+			<p class="translated-text"></p>
 		
 			<section class="lang-menu close">
 				<div>
@@ -105,7 +109,7 @@
 				</div>
 			</section>
 		</section>
-		<footer>made with by <a href="">Tee O.</a> </footer>
+		<footer>made with love by <a href="">Tee O.</a> </footer>
 
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>

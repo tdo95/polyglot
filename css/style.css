@@ -22,21 +22,158 @@
 /*******************************************/
 
 body {
+     font-size: 62.5%;
+     background-color: rgb(246, 247, 250);
 
 }
-
+label {
+     font-size: .8rem;
+     font-weight: 700;
+     padding: .5rem 0;
+     text-align: center;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+header, .main {
+     display: flex;
+}
 header {
+  padding: 0 1rem;
+  justify-content: center;   
+}
+.main {
+     margin: 2rem;
+     /* padding: 1rem; */
+
+     display: flex;
+     flex-wrap: wrap;
+     font-size: 1.2rem;
+     border-radius: 1rem;
+     background-color: rgb(255, 255, 255);
+     box-shadow: 0 0 9px 1px rgba(0,0,0,.2);
 
 }
 
+
+
+
+
+.from-lang, .to-lang {
+     border: none;
+     background: rgb(255, 255, 255);
+     border-bottom: 1px solid rgb(243, 242, 249);
+     padding: 1rem 0;
+     width: 47.5%;
+     text-transform: uppercase;
+}
+.flip-btn {
+     background: rgb(255, 255, 255);
+     border: none;
+     border-bottom: 1px solid rgb(243, 242, 249);
+     width: 5%;
+}
+.from-lang:hover, .to-lang:hover, .flip-btn:hover, .lang-menu button:hover {
+     background-color: rgb(246, 247, 250);
+
+}
+textarea {
+     border: none;
+     border-bottom-left-radius: 1rem;
+     padding: .5rem;
+}
+label, p, textarea {
+     width: 50%;
+     
+}
+p {
+     flex-grow: 1;
+     margin: 0;
+     border-bottom-right-radius: 1rem;
+     padding: .5rem;
+     background-color: rgb(243, 242, 249);
+
+}
+
+.lang-menu {
+     display: flex;
+     background-color: white;
+     align-content: start;
+     flex-wrap: wrap;
+     width: 100%;
+     padding: 1.2rem 2rem;
+     font-size: 1rem;
+
+     border-bottom-right-radius: 1rem;
+     border-bottom-left-radius: 1rem;
+}
+.lang-menu button {
+     background-color: transparent;
+     border: none;
+     width: 100%;
+     padding: .3rem .5rem;
+     text-align: start;
+}
+.lang-menu span {
+     font-size: .8rem;
+     font-weight: 700;
+     color: rgb(192, 192, 192);
+ 
+}
+.lang-menu div {
+     display: flex;
+     flex-direction: column;
+     width: 25%;
+     margin-bottom: 30px;
+}
+
 footer {
+     position: relative;
+     bottom: 0;
+     font-size: 1rem;
+     text-align: center;
 
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+.hidden {
+     display: none;
+}
+.open {
+     height: fit-content;
+     padding: 1.2rem 2rem;
+     animation: open 1s forwards;
+}
+@keyframes open {
+     0% {
+          opacity: 0;  
+     }
+     100% {
+          opacity: 100%;
+     }
+}
+
+.close {
+     height: 0;
+     opacity: 0;
+     padding: 0;
+}
+
+
+@media screen and (max-width: 500px){
+     .lang-menu div {
+          width: 50%;
+     }
+     .main {
+          margin: 1rem;
+     }
+     .from-text, .translated-text {
+          width: 100%;
+          height: 200px;
+     }
+     
+}
